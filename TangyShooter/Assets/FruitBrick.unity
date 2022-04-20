@@ -413,9 +413,10 @@ GameObject:
   - component: {fileID: 384166006}
   - component: {fileID: 384166007}
   - component: {fileID: 384166008}
+  - component: {fileID: 384166009}
   m_Layer: 0
   m_Name: TilePic (12)
-  m_TagString: Untagged
+  m_TagString: APPLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,6 +515,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &384166009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384166005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 1
+  number2: 0
 --- !u!1 &416674125
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,9 +541,10 @@ GameObject:
   - component: {fileID: 416674126}
   - component: {fileID: 416674127}
   - component: {fileID: 416674128}
+  - component: {fileID: 416674129}
   m_Layer: 0
   m_Name: TilePic (2)
-  m_TagString: Untagged
+  m_TagString: PEAR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -626,6 +643,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &416674129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416674125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 3
+  number2: 0
 --- !u!1 &430395165
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,9 +701,10 @@ GameObject:
   - component: {fileID: 439935004}
   - component: {fileID: 439935005}
   - component: {fileID: 439935006}
+  - component: {fileID: 439935007}
   m_Layer: 0
   m_Name: TilePic (3)
-  m_TagString: Untagged
+  m_TagString: ORANGE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -770,6 +803,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &439935007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439935003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 4
+  number2: 0
 --- !u!1 &497727525
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +932,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1 &612860741
 GameObject:
@@ -897,9 +945,10 @@ GameObject:
   - component: {fileID: 612860742}
   - component: {fileID: 612860743}
   - component: {fileID: 612860744}
+  - component: {fileID: 612860745}
   m_Layer: 0
   m_Name: TilePic (1)
-  m_TagString: Untagged
+  m_TagString: STRAWBERRY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -998,6 +1047,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &612860745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612860741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 2
+  number2: 0
 --- !u!1 &617108604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,9 +1073,10 @@ GameObject:
   - component: {fileID: 617108605}
   - component: {fileID: 617108606}
   - component: {fileID: 617108607}
+  - component: {fileID: 617108608}
   m_Layer: 0
   m_Name: TilePic (9)
-  m_TagString: Untagged
+  m_TagString: STRAWBERRY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1110,6 +1175,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &617108608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617108604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 2
+  number2: 0
 --- !u!1 &652188575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,9 +1233,10 @@ GameObject:
   - component: {fileID: 736566611}
   - component: {fileID: 736566612}
   - component: {fileID: 736566613}
+  - component: {fileID: 736566614}
   m_Layer: 0
   m_Name: TilePic (0)
-  m_TagString: Untagged
+  m_TagString: APPLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1254,6 +1335,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &736566614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736566610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 1
+  number2: 0
 --- !u!1 &767263084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,9 +1509,10 @@ GameObject:
   - component: {fileID: 897429246}
   - component: {fileID: 897429247}
   - component: {fileID: 897429248}
+  - component: {fileID: 897429249}
   m_Layer: 0
   m_Name: TilePic (5)
-  m_TagString: Untagged
+  m_TagString: STRAWBERRY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1514,6 +1611,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &897429249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897429245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 2
+  number2: 0
 --- !u!1 &928342326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,9 +1721,10 @@ GameObject:
   - component: {fileID: 994785627}
   - component: {fileID: 994785628}
   - component: {fileID: 994785629}
+  - component: {fileID: 994785630}
   m_Layer: 0
   m_Name: TilePic (6)
-  m_TagString: Untagged
+  m_TagString: PEAR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1710,6 +1823,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &994785630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994785626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 3
+  number2: 0
 --- !u!1 &1025108638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,9 +2313,10 @@ GameObject:
   - component: {fileID: 1309358950}
   - component: {fileID: 1309358951}
   - component: {fileID: 1309358952}
+  - component: {fileID: 1309358953}
   m_Layer: 0
   m_Name: TilePic (13)
-  m_TagString: Untagged
+  m_TagString: STRAWBERRY
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2286,6 +2415,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &1309358953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309358949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 2
+  number2: 0
 --- !u!1 &1373156549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,9 +2441,10 @@ GameObject:
   - component: {fileID: 1373156550}
   - component: {fileID: 1373156551}
   - component: {fileID: 1373156552}
+  - component: {fileID: 1373156553}
   m_Layer: 0
   m_Name: TilePic (8)
-  m_TagString: Untagged
+  m_TagString: APPLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2398,6 +2543,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &1373156553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373156549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 1
+  number2: 0
 --- !u!1 &1441838615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,9 +2969,10 @@ GameObject:
   - component: {fileID: 1685664991}
   - component: {fileID: 1685664992}
   - component: {fileID: 1685664993}
+  - component: {fileID: 1685664994}
   m_Layer: 0
   m_Name: TilePic (11)
-  m_TagString: Untagged
+  m_TagString: ORANGE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2910,6 +3071,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &1685664994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685664990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 4
+  number2: 0
 --- !u!1 &1705928966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,9 +3097,10 @@ GameObject:
   - component: {fileID: 1705928967}
   - component: {fileID: 1705928968}
   - component: {fileID: 1705928969}
+  - component: {fileID: 1705928970}
   m_Layer: 0
   m_Name: TilePic (7)
-  m_TagString: Untagged
+  m_TagString: ORANGE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3022,6 +3199,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &1705928970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705928966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 4
+  number2: 0
 --- !u!1 &1828983845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3065,9 +3257,10 @@ GameObject:
   - component: {fileID: 1891118798}
   - component: {fileID: 1891118799}
   - component: {fileID: 1891118800}
+  - component: {fileID: 1891118801}
   m_Layer: 0
   m_Name: TilePic (14)
-  m_TagString: Untagged
+  m_TagString: PEAR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3166,6 +3359,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &1891118801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891118797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 3
+  number2: 0
 --- !u!1 &1900316650
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,7 +3512,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.6727586
+  orthographic size: 2.6276746
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3348,6 +3556,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emptySpace: {fileID: 504110254}
+  emptySpaceIndex: 15
+  tiles:
+  - {fileID: 736566614}
+  - {fileID: 612860745}
+  - {fileID: 416674129}
+  - {fileID: 439935007}
+  - {fileID: 2010957246}
+  - {fileID: 897429249}
+  - {fileID: 994785630}
+  - {fileID: 1705928970}
+  - {fileID: 1373156553}
+  - {fileID: 617108608}
+  - {fileID: 2013442577}
+  - {fileID: 1685664994}
+  - {fileID: 384166009}
+  - {fileID: 1309358953}
+  - {fileID: 1891118801}
+  - {fileID: 0}
 --- !u!1 &2010957242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3359,9 +3585,10 @@ GameObject:
   - component: {fileID: 2010957243}
   - component: {fileID: 2010957244}
   - component: {fileID: 2010957245}
+  - component: {fileID: 2010957246}
   m_Layer: 0
   m_Name: TilePic (4)
-  m_TagString: Untagged
+  m_TagString: APPLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3460,6 +3687,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &2010957246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010957242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 1
+  number2: 0
 --- !u!1 &2013442573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3471,9 +3713,10 @@ GameObject:
   - component: {fileID: 2013442574}
   - component: {fileID: 2013442575}
   - component: {fileID: 2013442576}
+  - component: {fileID: 2013442577}
   m_Layer: 0
   m_Name: TilePic (10)
-  m_TagString: Untagged
+  m_TagString: PEAR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3572,6 +3815,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.12, y: 6.11}
   m_EdgeRadius: 0
+--- !u!114 &2013442577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013442573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5687f9a3ec742743bbf90eb5a102d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  number: 3
+  number2: 0
 --- !u!1 &2014652646
 GameObject:
   m_ObjectHideFlags: 0
