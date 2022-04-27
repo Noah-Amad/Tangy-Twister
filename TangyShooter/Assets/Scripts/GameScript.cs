@@ -9,6 +9,7 @@ public class GameScript : MonoBehaviour
     public int emptySpaceIndex = 15;
     [SerializeField] public TileScript[] tiles; 
     private Camera _camera;
+    public Game
     void Start()
     {
         _camera = Camera.main;
