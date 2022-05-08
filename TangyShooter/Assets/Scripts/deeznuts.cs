@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -66,6 +67,7 @@ public class deeznuts : MonoBehaviour
         }
         else if (Input.GetMouseButtonUp(0))
         {
+            Fruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             mouseEnd = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             mouseStart.x = MathF.Floor(mouseStart.x);
             mouseStart.y = MathF.Floor(mouseStart.y);
@@ -217,6 +219,7 @@ public class deeznuts : MonoBehaviour
                 rotaList = new List<float>();
                 listOfTiles = new List<GameObject>();
                 FruitRotateBool = false;
+                Fruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             }
         }
     }
