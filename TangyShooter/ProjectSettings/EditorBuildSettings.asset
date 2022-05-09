@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: fb75e2da253d9134ea376cfb8a772b77
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 42cc9df954f349642a3b39a5f5240eb3
+  - enabled: 1
+    path: Assets/Scenes/Zane's Scene.unity
+    guid: d6746d2eaeb5bb744988053dfe1b0def
   m_configObjects: {}
