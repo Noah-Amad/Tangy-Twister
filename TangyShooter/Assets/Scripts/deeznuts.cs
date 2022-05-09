@@ -36,6 +36,7 @@ public class deeznuts : MonoBehaviour
     private Vector3 mouseStart;
     private Vector3 mouseEnd;
     public bool spintrue = false;
+    public bool inputTrue = true;
 
 
 
@@ -60,11 +61,11 @@ public class deeznuts : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && inputTrue)
         {
             mouseStart = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (Input.GetMouseButtonUp(0) && inputTrue)
         {
             mouseEnd = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             mouseStart.x = MathF.Floor(mouseStart.x);
@@ -174,6 +175,7 @@ public class deeznuts : MonoBehaviour
         
         if (spintrue && v3i.Count == 4)
         {
+            inputTrue = false;
             rotaList[0] -= 0.5f;
             rotaList[1] -= 0.5f;
             rotaList[2] -= 0.5f;
@@ -217,6 +219,7 @@ public class deeznuts : MonoBehaviour
                 rotaList = new List<float>();
                 listOfTiles = new List<GameObject>();
                 FruitRotateBool = false;
+                inputTrue = true;
             }
         }
     }
