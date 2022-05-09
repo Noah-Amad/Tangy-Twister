@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 42cc9df954f349642a3b39a5f5240eb3
   - enabled: 1
-    path: Assets/Scenes/Zane's Scene.unity
-    guid: d6746d2eaeb5bb744988053dfe1b0def
+    path: Assets/Scenes/Level2.unity
+    guid: 56244a4e09ffd8445878750d4d894c57
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 3d6f18d53aa242941bb50d95277ee252
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 7c637e4cdcd744947a502141a18dfa58
   m_configObjects: {}
