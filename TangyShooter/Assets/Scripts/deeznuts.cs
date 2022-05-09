@@ -5,6 +5,8 @@ using System.Net;
 using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.PlayerLoop;
 using UnityEngine.Tilemaps;
 using Matrix4x4 = UnityEngine.Matrix4x4;
 using Quaternion = UnityEngine.Quaternion;
@@ -37,13 +39,14 @@ public class deeznuts : MonoBehaviour
     private Vector3 mouseStart;
     private Vector3 mouseEnd;
     public bool spintrue = false;
+    public bool inputTrue = true;
 
 
 
     void Awake()
     {
         mainCamera = Camera.main;
-        
+        Application.targetFrameRate = -1;
         foreach (var position in map.cellBounds.allPositionsWithin) {
             if (map.GetTile(position) == null)
             {
@@ -61,13 +64,12 @@ public class deeznuts : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && inputTrue)
         {
             mouseStart = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (Input.GetMouseButtonUp(0) && inputTrue)
         {
-            Fruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             mouseEnd = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             mouseStart.x = MathF.Floor(mouseStart.x);
             mouseStart.y = MathF.Floor(mouseStart.y);
@@ -176,6 +178,8 @@ public class deeznuts : MonoBehaviour
         
         if (spintrue && v3i.Count == 4)
         {
+            Fruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            inputTrue = false;
             rotaList[0] -= 0.5f;
             rotaList[1] -= 0.5f;
             rotaList[2] -= 0.5f;
@@ -220,6 +224,7 @@ public class deeznuts : MonoBehaviour
                 listOfTiles = new List<GameObject>();
                 FruitRotateBool = false;
                 Fruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+                inputTrue = true;
             }
         }
     }
@@ -227,7 +232,6 @@ public class deeznuts : MonoBehaviour
         
     void tileRotate(List<Vector3Int> v3int, List<float> rlist)
     {
-        
         map.SetTile(v3int[0], tileTemp1);
         map.SetTile(v3int[1], tileTemp3);
         map.SetTile(v3int[2], tileTemp0);
