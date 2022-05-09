@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FruitCollide : MonoBehaviour
 {
+    public GameObject next_level;
     private void OnTriggerEnter2D(UnityEngine.Collider2D other)
     {
         if(other.gameObject.tag == "Fruit")
@@ -18,5 +19,6 @@ public class FruitCollide : MonoBehaviour
             // Add lose animation
             // Add defeat screen
         }
+        next_level.SetActive(true);
     }
 }
