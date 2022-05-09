@@ -176,6 +176,7 @@ public class deeznuts : MonoBehaviour
         if (spintrue && v3i.Count == 4)
         {
             inputTrue = false;
+            Fruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             rotaList[0] -= 0.5f;
             rotaList[1] -= 0.5f;
             rotaList[2] -= 0.5f;
@@ -220,6 +221,7 @@ public class deeznuts : MonoBehaviour
                 listOfTiles = new List<GameObject>();
                 FruitRotateBool = false;
                 inputTrue = true;
+                Fruit.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             }
         }
     }
