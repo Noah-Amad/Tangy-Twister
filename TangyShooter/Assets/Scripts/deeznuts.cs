@@ -59,7 +59,7 @@ public class deeznuts : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0) && inputTrue)
         {
