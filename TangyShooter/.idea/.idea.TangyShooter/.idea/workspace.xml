@@ -38,6 +38,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../New/TangyShooter.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\mechm\OneDrive\Documents\New" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.0f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\mechm\OneDrive\Documents\GitHub\TangyGDGJam\TangyShooter -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -79,6 +87,8 @@
       <workItem from="1651476404357" duration="1548000" />
       <workItem from="1651878709780" duration="25207000" />
       <workItem from="1652066817305" duration="663000" />
+      <workItem from="1652079758957" duration="547000" />
+      <workItem from="1652089397688" duration="309000" />
     </task>
     <servers />
   </component>

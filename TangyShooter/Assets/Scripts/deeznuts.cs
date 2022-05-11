@@ -59,7 +59,7 @@ public class deeznuts : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetMouseButtonDown(0) && inputTrue)
         {
@@ -86,7 +86,7 @@ public class deeznuts : MonoBehaviour
                 if (ms.x <= position.x && ms.y >= position.y && me.x >= position.x && me.y <= position.y)
                 {
                     v3i.Add(position);
-                    rotaList.Add(map.GetTransformMatrix(position).GetR().eulerAngles.z);
+                    rotaList.Add(map.GetTransformMatrix(position).rotation.eulerAngles.z);
                 }
             }
             
