@@ -181,9 +181,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rotate the tiles to get your fruity companion to it's home, the blender!
+  m_text: "Rotate the tiles to get your fruity companion to it's home, the blender!
     4 tiles are rotated clockwise, starting from where you click to where you unclick!
-    Good Luck!
+    \n\nStep 1: Click on a Tile and hold down the mouse button.\nStep 2: Drag your
+    cursor to the bottom right Tile of the Tile you clicked on.\nStep 3: Release
+    and watch it get your tangy troubadour one step closer to eternal salvation!\n\nWARNING:
+    Some of these Tiles have devious intentions and do not want to see your vitamin
+    holding vagabond succeed. Watch out as they may not always go in the direction
+    you command them to....."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
