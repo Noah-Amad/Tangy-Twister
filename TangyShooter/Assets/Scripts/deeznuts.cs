@@ -60,36 +60,108 @@ public class deeznuts : MonoBehaviour
 
 
     void FixedUpdate()
-    {
-        if (Input.GetMouseButtonDown(0) && inputTrue)
+    { 
+        if (Input.GetMouseButtonUp(0) && inputTrue)
         {
             mouseStart = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        }
-        else if (Input.GetMouseButtonUp(0) && inputTrue)
-        {
-            mouseEnd = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             mouseStart.x = MathF.Floor(mouseStart.x);
             mouseStart.y = MathF.Floor(mouseStart.y);
-            mouseEnd.x = MathF.Floor(mouseEnd.x);
-            mouseEnd.y = MathF.Floor(mouseEnd.y);
             Vector3Int ms = Vector3Int.RoundToInt(mouseStart);
-            Vector3Int me = Vector3Int.RoundToInt(mouseEnd);
             ms.z = 0;
-            me.z = 0;
-            
-            foreach (var position in map.cellBounds.allPositionsWithin)
+
+            for (int i = 0; i < 4; i++)
             {
-                if (map.GetTile(position) == null)
+                if (i == 0)
                 {
-                    continue;
+                    Vector3Int sq1 = new Vector3Int(ms.x - 1, ms.y, ms.z);
+                    Vector3Int sq2 = new Vector3Int(ms.x - 1, ms.y + 1, ms.z);
+                    Vector3Int sq3 = new Vector3Int(ms.x, ms.y + 1, ms.z);
+                    if (map.GetTile(sq1) != null && map.GetTile(sq2) != null && map.GetTile(sq3) != null)
+                    {
+                        v3i.Add(sq1);
+                        rotaList.Add(map.GetTransformMatrix(sq1).rotation.eulerAngles.z);
+                        
+                        v3i.Add(ms);
+                        rotaList.Add(map.GetTransformMatrix(ms).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq2);
+                        rotaList.Add(map.GetTransformMatrix(sq2).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq3);
+                        rotaList.Add(map.GetTransformMatrix(sq3).rotation.eulerAngles.z);
+                        break;
+                    }
                 }
-                if (ms.x <= position.x && ms.y >= position.y && me.x >= position.x && me.y <= position.y)
+                
+                else if (i == 1)
                 {
-                    v3i.Add(position);
-                    rotaList.Add(map.GetTransformMatrix(position).rotation.eulerAngles.z);
+                    Vector3Int sq1 = new Vector3Int(ms.x - 1, ms.y, ms.z);
+                    Vector3Int sq2 = new Vector3Int(ms.x - 1, ms.y - 1, ms.z);
+                    Vector3Int sq3 = new Vector3Int(ms.x, ms.y - 1, ms.z);
+                    if (map.GetTile(sq1) != null && map.GetTile(sq2) != null && map.GetTile(sq3) != null)
+                    {
+                        v3i.Add(sq2);
+                        rotaList.Add(map.GetTransformMatrix(sq2).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq3);
+                        rotaList.Add(map.GetTransformMatrix(sq3).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq1);
+                        rotaList.Add(map.GetTransformMatrix(sq1).rotation.eulerAngles.z);
+                        
+                        v3i.Add(ms);
+                        rotaList.Add(map.GetTransformMatrix(ms).rotation.eulerAngles.z);
+                        break;
+                    }
+                }
+                
+                else if (i == 2)
+                {
+                    Vector3Int sq1 = new Vector3Int(ms.x, ms.y + 1, ms.z);
+                    Vector3Int sq2 = new Vector3Int(ms.x + 1, ms.y + 1, ms.z);
+                    Vector3Int sq3 = new Vector3Int(ms.x + 1, ms.y, ms.z);
+                    if (map.GetTile(sq1) != null && map.GetTile(sq2) != null && map.GetTile(sq3) != null)
+                    {
+                        v3i.Add(ms);
+                        rotaList.Add(map.GetTransformMatrix(ms).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq3);
+                        rotaList.Add(map.GetTransformMatrix(sq3).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq1);
+                        rotaList.Add(map.GetTransformMatrix(sq1).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq2);
+                        rotaList.Add(map.GetTransformMatrix(sq2).rotation.eulerAngles.z);
+                        break;
+                    }
+                }
+                
+                else if (i == 3)
+                {
+                    Vector3Int sq1 = new Vector3Int(ms.x + 1, ms.y, ms.z);
+                    Vector3Int sq2 = new Vector3Int(ms.x + 1, ms.y - 1, ms.z);
+                    Vector3Int sq3 = new Vector3Int(ms.x, ms.y - 1, ms.z);
+                    if (map.GetTile(sq1) != null && map.GetTile(sq2) != null && map.GetTile(sq3) != null)
+                    {
+                        Debug.Log("got here");
+
+                        v3i.Add(sq3);
+                        rotaList.Add(map.GetTransformMatrix(sq3).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq2);
+                        rotaList.Add(map.GetTransformMatrix(sq2).rotation.eulerAngles.z);
+                        
+                        v3i.Add(ms);
+                        rotaList.Add(map.GetTransformMatrix(ms).rotation.eulerAngles.z);
+                        
+                        v3i.Add(sq1);
+                        rotaList.Add(map.GetTransformMatrix(sq1).rotation.eulerAngles.z);
+                        break;
+                    }
                 }
             }
-            
+
             spintrue = true;
             if (v3i.Count != 4)
             {
